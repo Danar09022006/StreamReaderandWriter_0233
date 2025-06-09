@@ -1,17 +1,18 @@
 //StreamReaderandWriter
-
-
-
+#include <fstream>
+#include <iostream>
+#include <string>
+using namespace std;
 
 int main()
 {
     string baris;
+    // membuat object 
+    
 
-    ofstream outfile;
+    
 
-    outfile.open("Contohfile.txt");
-
-    cout << ">= Menulis file, \'q\' intuk keluar" << endl;
+    
     //unlimited loop untuk menulis
     while (true)
     {
@@ -21,8 +22,16 @@ int main()
 
         if (baris == "q")
             break;
-
+        //menulis dan memasukkan nilai dari "baris" ke dalam file
         outfile << baris << endl;
     }
+    // selesai dalam menulis sekaraang tutup filenya
     outfile.close();
+
+    // membuat object input file stream dalam mode membaaca
+    ifstream infile;
+    // membuka file
+    infile.open("Contohfile.txt");
+
+    cout << endl;
 }
