@@ -17,10 +17,9 @@ int main()
     {
         cout << "- ";
         //menempatkan setiap karakter dalam satu baris
-        
-
-        
-        
+        getline(cin, baris);
+        if (baris == "q")
+        break;
         //menulis dan memasukkan nilai dari "baris" ke dalam file
         outfile << baris << endl;
     }
@@ -30,9 +29,9 @@ int main()
     // membuat object input file stream dalam mode membaaca
     ifstream infile;
     // membuka file
-    infile.open("Contohfile.txt");
+    
 
-    cout << endl;
+    
     cout << ">= Membuka dan membaca file " << endl;
     // jika file ada maka
     if (infile.is_open())
