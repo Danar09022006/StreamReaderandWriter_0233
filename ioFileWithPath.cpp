@@ -1,0 +1,34 @@
+#include <fstream>
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+    
+    
+
+    
+    
+
+    // membuka file dalam mode menulis
+    ofstream outfile;
+    // menunjik ke sebuah nama file
+    outfile.open(Namafile + ".txt", ios::out);
+
+    cout << ">= Menulis file, \'q\' untuk keluar" << endl;
+
+    // unlimited loop untuk menulis
+    while (true)
+    {
+        cout << "- ";
+        // menampilkan setiap karakter dalam satu baris
+        getline(cin, baris);
+        // loop akan berhenti jika anda memasukkan karakter 'q'
+        if (baris == "q")
+            break;
+        // menulis dan memasukkan nilai dari "baris" ke dalam file
+        outfile << baris << endl;
+    }
+
+}
