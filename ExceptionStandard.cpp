@@ -10,9 +10,9 @@ int main()
     cout << "Awal Program" << endl; // penanda 1:..
     try
     {
-        
+        array<int, 3> data = (10, 20, 30);
         // pesan array 
-        cout << data.at(4) << endl;
+      
         // mengisi array elemen ke 2
     }
     catch (exception &e)
