@@ -1,9 +1,8 @@
-
-
+#include <iostream>
+#include <exception>
 // untuk object exception yang akan kita gunakan
-#include <array>
-// untuk array yang akan kita gunakan
-using namespace std;
+
+
 
 int main()
 {
