@@ -14,11 +14,11 @@ int main()
     // blok ini akan dieksekusi
     cout << "Pengecualian akan dieksekusi" << endl;
     }
-    catch (...)
-    {
-        // jika setelah integer maka blok ini akan diexsekusi
-        cout << "Default pengecualian diexsekusi" << endl;
-    }
+    
+    
+    
+    
+    
 
-    return 0;
+    
 }
